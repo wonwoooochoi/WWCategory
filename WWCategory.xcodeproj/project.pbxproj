@@ -40,6 +40,7 @@
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
 		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
 		D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */; };
+		D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
 		D4D93D241C427B3D0049B12C /* NSFileManager+Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Directory.h"; sourceTree = "<group>"; };
 		D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Directory.m"; sourceTree = "<group>"; };
+		D4D93D281C4283E00049B12C /* NSNotificationCenter+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Notification.h"; sourceTree = "<group>"; };
+		D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Notification.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,7 @@
 				D41345C91C42500100D67C0E /* NSData */,
 				D41345C51C424EFD00D67C0E /* NSDictionary */,
 				D4D93D231C427B220049B12C /* NSFileManager */,
+				D4D93D271C4283BD0049B12C /* NSNotificationCenter */,
 				D41345D11C42530500D67C0E /* NSObject */,
 				D41345DB1C42543A00D67C0E /* NSSet */,
 				D41345CA1C42500100D67C0E /* NSString */,
@@ -372,6 +376,15 @@
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+		D4D93D271C4283BD0049B12C /* NSNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D4D93D281C4283E00049B12C /* NSNotificationCenter+Notification.h */,
+				D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */,
+			);
+			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +481,7 @@
 				D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
+				D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */,
 				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
 				D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */,
 				D41345E41C4255E400D67C0E /* NSString+JSON.m in Sources */,
