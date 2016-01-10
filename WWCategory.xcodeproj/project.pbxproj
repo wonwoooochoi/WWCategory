@@ -38,6 +38,7 @@
 		D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346111C4262FD00D67C0E /* UIScreen+Size.m */; };
 		D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */; };
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
+		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,8 @@
 		D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+GetInstance.m"; sourceTree = "<group>"; };
 		D41346181C4269DC00D67C0E /* UITextField+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Color.h"; sourceTree = "<group>"; };
 		D41346191C4269DC00D67C0E /* UITextField+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Color.m"; sourceTree = "<group>"; };
+		D413461C1C426A2200D67C0E /* UIView+Rounding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rounding.h"; sourceTree = "<group>"; };
+		D413461D1C426A2200D67C0E /* UIView+Rounding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rounding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +265,7 @@
 				D413460F1C4262E400D67C0E /* UIScreen */,
 				D41346131C4268A100D67C0E /* UIStoryboard */,
 				D41346171C4269C500D67C0E /* UITextField */,
+				D413461B1C426A0500D67C0E /* UIView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -338,6 +342,15 @@
 				D41346191C4269DC00D67C0E /* UITextField+Color.m */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		D413461B1C426A0500D67C0E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D413461C1C426A2200D67C0E /* UIView+Rounding.h */,
+				D413461D1C426A2200D67C0E /* UIView+Rounding.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +441,7 @@
 				D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */,
 				D41345FF1C4260A300D67C0E /* UIBezierPath+Drawing.m in Sources */,
 				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
+				D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */,
 				D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
 				D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */,
