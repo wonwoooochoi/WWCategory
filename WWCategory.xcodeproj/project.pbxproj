@@ -13,6 +13,8 @@
 		D413459C1C42461700D67C0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D413459A1C42461700D67C0E /* Main.storyboard */; };
 		D413459E1C42461700D67C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D413459D1C42461700D67C0E /* Assets.xcassets */; };
 		D41345A11C42461700D67C0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D413459F1C42461700D67C0E /* LaunchScreen.storyboard */; };
+		D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C01C424E3200D67C0E /* NSArray+JSON.m */; };
+		D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D413459D1C42461700D67C0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41345A01C42461700D67C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41345A21C42461700D67C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41345BF1C424E3200D67C0E /* NSArray+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSON.h"; sourceTree = "<group>"; };
+		D41345C01C424E3200D67C0E /* NSArray+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
+		D41345C61C424EFD00D67C0E /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,7 @@
 		D41345901C42461700D67C0E /* WWCategory */ = {
 			isa = PBXGroup;
 			children = (
-				D41345A81C42462900D67C0E /* Category */,
+				D41345AC1C424E0700D67C0E /* Category */,
 				D41345941C42461700D67C0E /* AppDelegate.h */,
 				D41345951C42461700D67C0E /* AppDelegate.m */,
 				D41345971C42461700D67C0E /* ViewController.h */,
@@ -80,12 +86,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D41345A81C42462900D67C0E /* Category */ = {
+		D41345AC1C424E0700D67C0E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D41345AD1C424E0700D67C0E /* Foundation */,
 			);
 			path = Category;
 			sourceTree = SOURCE_ROOT;
+		};
+		D41345AD1C424E0700D67C0E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D41345AE1C424E0700D67C0E /* NSArray */,
+				D41345C51C424EFD00D67C0E /* NSDictionary */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		D41345AE1C424E0700D67C0E /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				D41345BF1C424E3200D67C0E /* NSArray+JSON.h */,
+				D41345C01C424E3200D67C0E /* NSArray+JSON.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		D41345C51C424EFD00D67C0E /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D41345C61C424EFD00D67C0E /* NSDictionary+JSON.h */,
+				D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -158,7 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41345991C42461700D67C0E /* ViewController.m in Sources */,
+				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
+				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
