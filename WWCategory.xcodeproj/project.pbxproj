@@ -36,6 +36,7 @@
 		D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */; };
 		D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D413460D1C42629E00D67C0E /* UIImageView+CreateImageView.m */; };
 		D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346111C4262FD00D67C0E /* UIScreen+Size.m */; };
+		D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		D413460D1C42629E00D67C0E /* UIImageView+CreateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CreateImageView.m"; sourceTree = "<group>"; };
 		D41346101C4262FD00D67C0E /* UIScreen+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Size.h"; sourceTree = "<group>"; };
 		D41346111C4262FD00D67C0E /* UIScreen+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Size.m"; sourceTree = "<group>"; };
+		D41346141C4268EC00D67C0E /* UIStoryboard+GetInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+GetInstance.h"; sourceTree = "<group>"; };
+		D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+GetInstance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,7 @@
 				D41346041C42618A00D67C0E /* UIImage */,
 				D413460B1C42628400D67C0E /* UIImageView */,
 				D413460F1C4262E400D67C0E /* UIScreen */,
+				D41346131C4268A100D67C0E /* UIStoryboard */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -312,6 +316,15 @@
 				D41346111C4262FD00D67C0E /* UIScreen+Size.m */,
 			);
 			path = UIScreen;
+			sourceTree = "<group>";
+		};
+		D41346131C4268A100D67C0E /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D41346141C4268EC00D67C0E /* UIStoryboard+GetInstance.h */,
+				D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */,
+			);
+			path = UIStoryboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41345E71C42565300D67C0E /* NSData+AES.m in Sources */,
+				D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */,
 				D41345EA1C4259C200D67C0E /* NSString+HMAC.m in Sources */,
 				D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */,
 				D41346071C4261AE00D67C0E /* UIImage+CreateImage.m in Sources */,
