@@ -15,4 +15,5 @@
 #import "UIScreen+Size.h"
 #import "UIStoryboard+GetInstance.h"
 #import "UITextField+Color.h"
+#import "UIView+Capture.h"
 #import "UIView+Rounding.h"

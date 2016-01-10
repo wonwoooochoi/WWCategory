@@ -8,3 +8,4 @@
 
 #import "FoundationCategory.h"
 #import "UIKitCategory.h"
+#import "CoreGraphicsCategory.h"
