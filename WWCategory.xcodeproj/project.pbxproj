@@ -17,6 +17,10 @@
 		D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */; };
 		D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CC1C42503600D67C0E /* NSData+Base64.m */; };
 		D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CF1C42506300D67C0E /* NSString+Base64.m */; };
+		D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */; };
+		D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */; };
+		D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */; };
+		D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		D41345CC1C42503600D67C0E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		D41345CE1C42506300D67C0E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		D41345CF1C42506300D67C0E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		D41345D21C42532B00D67C0E /* NSObject+PrintUicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PrintUicode.h"; sourceTree = "<group>"; };
+		D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNSObject+PrintUicode.m"; sourceTree = "<group>"; };
+		D41345D51C4253A700D67C0E /* NSArray+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrintUnicode.h"; sourceTree = "<group>"; };
+		D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrintUnicode.m"; sourceTree = "<group>"; };
+		D41345D81C42540000D67C0E /* NSDictionary+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PrintUnicode.h"; sourceTree = "<group>"; };
+		D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PrintUnicode.m"; sourceTree = "<group>"; };
+		D41345DC1C42544700D67C0E /* NSSet+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+PrintUnicode.h"; sourceTree = "<group>"; };
+		D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+PrintUnicode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,8 @@
 				D41345AE1C424E0700D67C0E /* NSArray */,
 				D41345C91C42500100D67C0E /* NSData */,
 				D41345C51C424EFD00D67C0E /* NSDictionary */,
+				D41345D11C42530500D67C0E /* NSObject */,
+				D41345DB1C42543A00D67C0E /* NSSet */,
 				D41345CA1C42500100D67C0E /* NSString */,
 			);
 			path = Foundation;
@@ -116,6 +130,8 @@
 			children = (
 				D41345BF1C424E3200D67C0E /* NSArray+JSON.h */,
 				D41345C01C424E3200D67C0E /* NSArray+JSON.m */,
+				D41345D51C4253A700D67C0E /* NSArray+PrintUnicode.h */,
+				D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -125,6 +141,8 @@
 			children = (
 				D41345C61C424EFD00D67C0E /* NSDictionary+JSON.h */,
 				D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */,
+				D41345D81C42540000D67C0E /* NSDictionary+PrintUnicode.h */,
+				D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -145,6 +163,24 @@
 				D41345CF1C42506300D67C0E /* NSString+Base64.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		D41345D11C42530500D67C0E /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				D41345D21C42532B00D67C0E /* NSObject+PrintUicode.h */,
+				D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		D41345DB1C42543A00D67C0E /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+				D41345DC1C42544700D67C0E /* NSSet+PrintUnicode.h */,
+				D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */,
+			);
+			path = NSSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */,
 				D41345991C42461700D67C0E /* ViewController.m in Sources */,
+				D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */,
 				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
+				D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */,
+				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
