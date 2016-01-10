@@ -32,6 +32,8 @@
 		D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345FA1C42602A00D67C0E /* UIApplication+Keyboard.m */; };
 		D41345FF1C4260A300D67C0E /* UIBezierPath+Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345FE1C4260A300D67C0E /* UIBezierPath+Drawing.m */; };
 		D41346031C42610300D67C0E /* UIColor+CreateColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346021C42610300D67C0E /* UIColor+CreateColor.m */; };
+		D41346071C4261AE00D67C0E /* UIImage+CreateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346061C4261AE00D67C0E /* UIImage+CreateImage.m */; };
+		D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,10 @@
 		D41345FE1C4260A300D67C0E /* UIBezierPath+Drawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Drawing.m"; sourceTree = "<group>"; };
 		D41346011C42610300D67C0E /* UIColor+CreateColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CreateColor.h"; sourceTree = "<group>"; };
 		D41346021C42610300D67C0E /* UIColor+CreateColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CreateColor.m"; sourceTree = "<group>"; };
+		D41346051C4261AE00D67C0E /* UIImage+CreateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CreateImage.h"; sourceTree = "<group>"; };
+		D41346061C4261AE00D67C0E /* UIImage+CreateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CreateImage.m"; sourceTree = "<group>"; };
+		D41346081C42623000D67C0E /* UIImage+ImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageProcessing.h"; sourceTree = "<group>"; };
+		D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageProcessing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,7 @@
 				D41345F81C425FE000D67C0E /* UIApplication */,
 				D41345FC1C42605F00D67C0E /* UIBezierPath */,
 				D41346001C4260D600D67C0E /* UIColor */,
+				D41346041C42618A00D67C0E /* UIImage */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -268,6 +275,17 @@
 				D41346021C42610300D67C0E /* UIColor+CreateColor.m */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		D41346041C42618A00D67C0E /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				D41346051C4261AE00D67C0E /* UIImage+CreateImage.h */,
+				D41346061C4261AE00D67C0E /* UIImage+CreateImage.m */,
+				D41346081C42623000D67C0E /* UIImage+ImageProcessing.h */,
+				D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +361,12 @@
 				D41345E71C42565300D67C0E /* NSData+AES.m in Sources */,
 				D41345EA1C4259C200D67C0E /* NSString+HMAC.m in Sources */,
 				D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */,
+				D41346071C4261AE00D67C0E /* UIImage+CreateImage.m in Sources */,
 				D41345991C42461700D67C0E /* ViewController.m in Sources */,
 				D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */,
 				D41345F31C425B1200D67C0E /* NSString+TypeChecking.m in Sources */,
 				D41345ED1C425A0A00D67C0E /* NSString+AES.m in Sources */,
+				D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */,
 				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
 				D41345E11C42556A00D67C0E /* NSData+JSON.m in Sources */,
 				D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */,
