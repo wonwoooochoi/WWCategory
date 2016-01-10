@@ -104,6 +104,9 @@
 		D41346191C4269DC00D67C0E /* UITextField+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Color.m"; sourceTree = "<group>"; };
 		D413461C1C426A2200D67C0E /* UIView+Rounding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rounding.h"; sourceTree = "<group>"; };
 		D413461D1C426A2200D67C0E /* UIView+Rounding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rounding.m"; sourceTree = "<group>"; };
+		D4D93D101C4274470049B12C /* WWCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCategory.h; sourceTree = "<group>"; };
+		D4D93D111C4274750049B12C /* UIKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitCategory.h; sourceTree = "<group>"; };
+		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,7 @@
 		D41345AC1C424E0700D67C0E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D4D93D101C4274470049B12C /* WWCategory.h */,
 				D41345AD1C424E0700D67C0E /* Foundation */,
 				D41345F71C425FE000D67C0E /* UIKit */,
 			);
@@ -170,6 +174,7 @@
 		D41345AD1C424E0700D67C0E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D4D93D121C4274880049B12C /* FoundationCategory.h */,
 				D41345AE1C424E0700D67C0E /* NSArray */,
 				D41345C91C42500100D67C0E /* NSData */,
 				D41345C51C424EFD00D67C0E /* NSDictionary */,
@@ -257,6 +262,7 @@
 		D41345F71C425FE000D67C0E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D4D93D111C4274750049B12C /* UIKitCategory.h */,
 				D41345F81C425FE000D67C0E /* UIApplication */,
 				D41345FC1C42605F00D67C0E /* UIBezierPath */,
 				D41346001C4260D600D67C0E /* UIColor */,
@@ -598,6 +604,7 @@
 				D41345A71C42461700D67C0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
