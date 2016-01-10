@@ -39,6 +39,9 @@
 		D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */; };
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
 		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
+		D4D93D1C1C4279440049B12C /* NSString+Localizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D1B1C4279440049B12C /* NSString+Localizing.m */; };
+		D4D93D1F1C4279B80049B12C /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D1E1C4279B80049B12C /* NSString+Hash.m */; };
+		D4D93D221C427A0F0049B12C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D211C427A0F0049B12C /* NSString+URLEncoding.m */; };
 		D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */; };
 		D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */; };
 /* End PBXBuildFile section */
@@ -109,6 +112,12 @@
 		D4D93D101C4274470049B12C /* WWCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCategory.h; sourceTree = "<group>"; };
 		D4D93D111C4274750049B12C /* UIKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitCategory.h; sourceTree = "<group>"; };
 		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
+		D4D93D1A1C4279440049B12C /* NSString+Localizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localizing.h"; sourceTree = "<group>"; };
+		D4D93D1B1C4279440049B12C /* NSString+Localizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localizing.m"; sourceTree = "<group>"; };
+		D4D93D1D1C4279B80049B12C /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		D4D93D1E1C4279B80049B12C /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		D4D93D201C427A0F0049B12C /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		D4D93D211C427A0F0049B12C /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		D4D93D241C427B3D0049B12C /* NSFileManager+Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Directory.h"; sourceTree = "<group>"; };
 		D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Directory.m"; sourceTree = "<group>"; };
 		D4D93D281C4283E00049B12C /* NSNotificationCenter+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Notification.h"; sourceTree = "<group>"; };
@@ -235,16 +244,22 @@
 				D41345EC1C425A0A00D67C0E /* NSString+AES.m */,
 				D41345CE1C42506300D67C0E /* NSString+Base64.h */,
 				D41345CF1C42506300D67C0E /* NSString+Base64.m */,
+				D4D93D1D1C4279B80049B12C /* NSString+Hash.h */,
+				D4D93D1E1C4279B80049B12C /* NSString+Hash.m */,
 				D41345E81C4259C200D67C0E /* NSString+HMAC.h */,
 				D41345E91C4259C200D67C0E /* NSString+HMAC.m */,
 				D41345E21C4255E400D67C0E /* NSString+JSON.h */,
 				D41345E31C4255E400D67C0E /* NSString+JSON.m */,
+				D4D93D1A1C4279440049B12C /* NSString+Localizing.h */,
+				D4D93D1B1C4279440049B12C /* NSString+Localizing.m */,
+				D41345F41C425C3500D67C0E /* NSString+Size.h */,
+				D41345F51C425C3500D67C0E /* NSString+Size.m */,
 				D41345EE1C425A6600D67C0E /* NSString+Trim.h */,
 				D41345EF1C425A6600D67C0E /* NSString+Trim.m */,
 				D41345F11C425B1200D67C0E /* NSString+TypeChecking.h */,
 				D41345F21C425B1200D67C0E /* NSString+TypeChecking.m */,
-				D41345F41C425C3500D67C0E /* NSString+Size.h */,
-				D41345F51C425C3500D67C0E /* NSString+Size.m */,
+				D4D93D201C427A0F0049B12C /* NSString+URLEncoding.h */,
+				D4D93D211C427A0F0049B12C /* NSString+URLEncoding.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -480,12 +495,15 @@
 				D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */,
 				D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
+				D4D93D1F1C4279B80049B12C /* NSString+Hash.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
 				D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */,
 				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
 				D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */,
 				D41345E41C4255E400D67C0E /* NSString+JSON.m in Sources */,
 				D41345F01C425A6600D67C0E /* NSString+Trim.m in Sources */,
+				D4D93D221C427A0F0049B12C /* NSString+URLEncoding.m in Sources */,
+				D4D93D1C1C4279440049B12C /* NSString+Localizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
