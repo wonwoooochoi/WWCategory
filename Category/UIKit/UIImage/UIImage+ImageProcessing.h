@@ -11,5 +11,10 @@
 @interface UIImage (ImageProcessing)
 
 - (UIImage *)grayScaleImage;
+- (UIImage *)resizedFillImageWithSize:(CGSize)newSize;
+- (UIImage *)resizedFitImageWithSize:(CGSize)newSize;
+- (UIImage *)croppedImageWithFrame:(CGRect)frame;
+- (UIImage *)setAlpha:(CGFloat)alpha;
+- (UIImage *)maskedImageWithMaskImage:(UIImage *)maskImage;
 
 @end
