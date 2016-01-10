@@ -35,6 +35,7 @@
 		D41346071C4261AE00D67C0E /* UIImage+CreateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346061C4261AE00D67C0E /* UIImage+CreateImage.m */; };
 		D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */; };
 		D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D413460D1C42629E00D67C0E /* UIImageView+CreateImageView.m */; };
+		D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346111C4262FD00D67C0E /* UIScreen+Size.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,8 @@
 		D41346091C42623000D67C0E /* UIImage+ImageProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageProcessing.m"; sourceTree = "<group>"; };
 		D413460C1C42629E00D67C0E /* UIImageView+CreateImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CreateImageView.h"; sourceTree = "<group>"; };
 		D413460D1C42629E00D67C0E /* UIImageView+CreateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CreateImageView.m"; sourceTree = "<group>"; };
+		D41346101C4262FD00D67C0E /* UIScreen+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Size.h"; sourceTree = "<group>"; };
+		D41346111C4262FD00D67C0E /* UIScreen+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Size.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +253,7 @@
 				D41346001C4260D600D67C0E /* UIColor */,
 				D41346041C42618A00D67C0E /* UIImage */,
 				D413460B1C42628400D67C0E /* UIImageView */,
+				D413460F1C4262E400D67C0E /* UIScreen */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -299,6 +303,15 @@
 				D413460D1C42629E00D67C0E /* UIImageView+CreateImageView.m */,
 			);
 			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		D413460F1C4262E400D67C0E /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D41346101C4262FD00D67C0E /* UIScreen+Size.h */,
+				D41346111C4262FD00D67C0E /* UIScreen+Size.m */,
+			);
+			path = UIScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +400,7 @@
 				D41346031C42610300D67C0E /* UIColor+CreateColor.m in Sources */,
 				D41345FF1C4260A300D67C0E /* UIBezierPath+Drawing.m in Sources */,
 				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
+				D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
 				D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */,
 				D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */,
