@@ -58,6 +58,7 @@
 		D41345901C42461700D67C0E /* WWCategory */ = {
 			isa = PBXGroup;
 			children = (
+				D41345A81C42462900D67C0E /* Category */,
 				D41345941C42461700D67C0E /* AppDelegate.h */,
 				D41345951C42461700D67C0E /* AppDelegate.m */,
 				D41345971C42461700D67C0E /* ViewController.h */,
@@ -78,6 +79,13 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		D41345A81C42462900D67C0E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
