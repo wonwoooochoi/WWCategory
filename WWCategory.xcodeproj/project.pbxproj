@@ -29,6 +29,7 @@
 		D41345F01C425A6600D67C0E /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345EF1C425A6600D67C0E /* NSString+Trim.m */; };
 		D41345F31C425B1200D67C0E /* NSString+TypeChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345F21C425B1200D67C0E /* NSString+TypeChecking.m */; };
 		D41345F61C425C3500D67C0E /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345F51C425C3500D67C0E /* NSString+Size.m */; };
+		D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345FA1C42602A00D67C0E /* UIApplication+Keyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		D41345F21C425B1200D67C0E /* NSString+TypeChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TypeChecking.m"; sourceTree = "<group>"; };
 		D41345F41C425C3500D67C0E /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		D41345F51C425C3500D67C0E /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		D41345F91C42602A00D67C0E /* UIApplication+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Keyboard.h"; sourceTree = "<group>"; };
+		D41345FA1C42602A00D67C0E /* UIApplication+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Keyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				D41345AD1C424E0700D67C0E /* Foundation */,
+				D41345F71C425FE000D67C0E /* UIKit */,
 			);
 			path = Category;
 			sourceTree = SOURCE_ROOT;
@@ -223,6 +227,23 @@
 			path = NSSet;
 			sourceTree = "<group>";
 		};
+		D41345F71C425FE000D67C0E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D41345F81C425FE000D67C0E /* UIApplication */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D41345F81C425FE000D67C0E /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D41345F91C42602A00D67C0E /* UIApplication+Keyboard.h */,
+				D41345FA1C42602A00D67C0E /* UIApplication+Keyboard.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +327,7 @@
 				D41345F61C425C3500D67C0E /* NSString+Size.m in Sources */,
 				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
+				D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
 				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
