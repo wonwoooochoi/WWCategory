@@ -46,6 +46,7 @@
 		D4D93D221C427A0F0049B12C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D211C427A0F0049B12C /* NSString+URLEncoding.m */; };
 		D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */; };
 		D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */; };
+		D4D93D2E1C4299B20049B12C /* WWCategory.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D4D93D2D1C4299B20049B12C /* WWCategory.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Directory.m"; sourceTree = "<group>"; };
 		D4D93D281C4283E00049B12C /* NSNotificationCenter+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Notification.h"; sourceTree = "<group>"; };
 		D4D93D291C4283E00049B12C /* NSNotificationCenter+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Notification.m"; sourceTree = "<group>"; };
+		D4D93D2D1C4299B20049B12C /* WWCategory.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WWCategory.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				D413459D1C42461700D67C0E /* Assets.xcassets */,
 				D413459F1C42461700D67C0E /* LaunchScreen.storyboard */,
 				D41345A21C42461700D67C0E /* Info.plist */,
+				D4D93D2D1C4299B20049B12C /* WWCategory.podspec */,
 				D41345911C42461700D67C0E /* Supporting Files */,
 			);
 			path = WWCategory;
@@ -477,6 +480,7 @@
 			files = (
 				D41345A11C42461700D67C0E /* LaunchScreen.storyboard in Resources */,
 				D413459E1C42461700D67C0E /* Assets.xcassets in Resources */,
+				D4D93D2E1C4299B20049B12C /* WWCategory.podspec in Resources */,
 				D413459C1C42461700D67C0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
