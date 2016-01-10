@@ -21,6 +21,8 @@
 		D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */; };
 		D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */; };
 		D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */; };
+		D41345E11C42556A00D67C0E /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345E01C42556A00D67C0E /* NSData+JSON.m */; };
+		D41345E41C4255E400D67C0E /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345E31C4255E400D67C0E /* NSString+JSON.m */; };
 		D41345E71C42565300D67C0E /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345E61C42565300D67C0E /* NSData+AES.m */; };
 		D41345ED1C425A0A00D67C0E /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345EC1C425A0A00D67C0E /* NSString+AES.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,10 @@
 		D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PrintUnicode.m"; sourceTree = "<group>"; };
 		D41345DC1C42544700D67C0E /* NSSet+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+PrintUnicode.h"; sourceTree = "<group>"; };
 		D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+PrintUnicode.m"; sourceTree = "<group>"; };
+		D41345DF1C42556A00D67C0E /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
+		D41345E01C42556A00D67C0E /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
+		D41345E21C4255E400D67C0E /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		D41345E31C4255E400D67C0E /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		D41345E51C42565300D67C0E /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
 		D41345E61C42565300D67C0E /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		D41345EB1C425A0A00D67C0E /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 				D41345E61C42565300D67C0E /* NSData+AES.m */,
 				D41345CB1C42503600D67C0E /* NSData+Base64.h */,
 				D41345CC1C42503600D67C0E /* NSData+Base64.m */,
+				D41345DF1C42556A00D67C0E /* NSData+JSON.h */,
+				D41345E01C42556A00D67C0E /* NSData+JSON.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 				D41345EC1C425A0A00D67C0E /* NSString+AES.m */,
 				D41345CE1C42506300D67C0E /* NSString+Base64.h */,
 				D41345CF1C42506300D67C0E /* NSString+Base64.m */,
+				D41345E21C4255E400D67C0E /* NSString+JSON.h */,
+				D41345E31C4255E400D67C0E /* NSString+JSON.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -269,6 +279,7 @@
 				D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */,
 				D41345ED1C425A0A00D67C0E /* NSString+AES.m in Sources */,
 				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
+				D41345E11C42556A00D67C0E /* NSData+JSON.m in Sources */,
 				D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */,
 				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
@@ -276,6 +287,7 @@
 				D41345931C42461700D67C0E /* main.m in Sources */,
 				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
 				D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */,
+				D41345E41C4255E400D67C0E /* NSString+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
