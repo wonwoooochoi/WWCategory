@@ -17,7 +17,7 @@
 		D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */; };
 		D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CC1C42503600D67C0E /* NSData+Base64.m */; };
 		D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CF1C42506300D67C0E /* NSString+Base64.m */; };
-		D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */; };
+		D41345D41C42532B00D67C0E /* NSObject+PrintUicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D31C42532B00D67C0E /* NSObject+PrintUicode.m */; };
 		D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */; };
 		D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345D91C42540000D67C0E /* NSDictionary+PrintUnicode.m */; };
 		D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345DD1C42544700D67C0E /* NSSet+PrintUnicode.m */; };
@@ -61,7 +61,7 @@
 		D41345CE1C42506300D67C0E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		D41345CF1C42506300D67C0E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		D41345D21C42532B00D67C0E /* NSObject+PrintUicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PrintUicode.h"; sourceTree = "<group>"; };
-		D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNSObject+PrintUicode.m"; sourceTree = "<group>"; };
+		D41345D31C42532B00D67C0E /* NSObject+PrintUicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PrintUicode.m"; sourceTree = "<group>"; };
 		D41345D51C4253A700D67C0E /* NSArray+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrintUnicode.h"; sourceTree = "<group>"; };
 		D41345D61C4253A700D67C0E /* NSArray+PrintUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrintUnicode.m"; sourceTree = "<group>"; };
 		D41345D81C42540000D67C0E /* NSDictionary+PrintUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PrintUnicode.h"; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D41345D21C42532B00D67C0E /* NSObject+PrintUicode.h */,
-				D41345D31C42532B00D67C0E /* NSNSObject+PrintUicode.m */,
+				D41345D31C42532B00D67C0E /* NSObject+PrintUicode.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -429,7 +429,7 @@
 				D41345D71C4253A700D67C0E /* NSArray+PrintUnicode.m in Sources */,
 				D41346071C4261AE00D67C0E /* UIImage+CreateImage.m in Sources */,
 				D41345991C42461700D67C0E /* ViewController.m in Sources */,
-				D41345D41C42532B00D67C0E /* NSNSObject+PrintUicode.m in Sources */,
+				D41345D41C42532B00D67C0E /* NSObject+PrintUicode.m in Sources */,
 				D41345F31C425B1200D67C0E /* NSString+TypeChecking.m in Sources */,
 				D41345ED1C425A0A00D67C0E /* NSString+AES.m in Sources */,
 				D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */,
