@@ -39,6 +39,7 @@
 		D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */; };
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
 		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
+		D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,8 @@
 		D4D93D101C4274470049B12C /* WWCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCategory.h; sourceTree = "<group>"; };
 		D4D93D111C4274750049B12C /* UIKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitCategory.h; sourceTree = "<group>"; };
 		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
+		D4D93D241C427B3D0049B12C /* NSFileManager+Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Directory.h"; sourceTree = "<group>"; };
+		D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Directory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,7 @@
 				D41345AE1C424E0700D67C0E /* NSArray */,
 				D41345C91C42500100D67C0E /* NSData */,
 				D41345C51C424EFD00D67C0E /* NSDictionary */,
+				D4D93D231C427B220049B12C /* NSFileManager */,
 				D41345D11C42530500D67C0E /* NSObject */,
 				D41345DB1C42543A00D67C0E /* NSSet */,
 				D41345CA1C42500100D67C0E /* NSString */,
@@ -359,6 +363,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		D4D93D231C427B220049B12C /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				D4D93D241C427B3D0049B12C /* NSFileManager+Directory.h */,
+				D4D93D251C427B3D0049B12C /* NSFileManager+Directory.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +453,7 @@
 				D41345ED1C425A0A00D67C0E /* NSString+AES.m in Sources */,
 				D413460A1C42623000D67C0E /* UIImage+ImageProcessing.m in Sources */,
 				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
+				D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */,
 				D41345E11C42556A00D67C0E /* NSData+JSON.m in Sources */,
 				D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */,
 				D41345F61C425C3500D67C0E /* NSString+Size.m in Sources */,
