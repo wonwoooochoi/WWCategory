@@ -40,6 +40,7 @@
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
 		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
 		D4D93D151C4276B60049B12C /* UIView+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D141C4276B60049B12C /* UIView+Capture.m */; };
+		D4D93D191C4278060049B12C /* CoreGraphicsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D181C4278060049B12C /* CoreGraphicsCategory.m */; };
 		D4D93D1C1C4279440049B12C /* NSString+Localizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D1B1C4279440049B12C /* NSString+Localizing.m */; };
 		D4D93D1F1C4279B80049B12C /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D1E1C4279B80049B12C /* NSString+Hash.m */; };
 		D4D93D221C427A0F0049B12C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D211C427A0F0049B12C /* NSString+URLEncoding.m */; };
@@ -115,6 +116,8 @@
 		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
 		D4D93D131C4276B60049B12C /* UIView+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Capture.h"; sourceTree = "<group>"; };
 		D4D93D141C4276B60049B12C /* UIView+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Capture.m"; sourceTree = "<group>"; };
+		D4D93D171C4278060049B12C /* CoreGraphicsCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsCategory.h; sourceTree = "<group>"; };
+		D4D93D181C4278060049B12C /* CoreGraphicsCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsCategory.m; sourceTree = "<group>"; };
 		D4D93D1A1C4279440049B12C /* NSString+Localizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localizing.h"; sourceTree = "<group>"; };
 		D4D93D1B1C4279440049B12C /* NSString+Localizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localizing.m"; sourceTree = "<group>"; };
 		D4D93D1D1C4279B80049B12C /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
@@ -185,6 +188,7 @@
 				D4D93D101C4274470049B12C /* WWCategory.h */,
 				D41345AD1C424E0700D67C0E /* Foundation */,
 				D41345F71C425FE000D67C0E /* UIKit */,
+				D4D93D161C4277AD0049B12C /* CoreGraphics */,
 			);
 			path = Category;
 			sourceTree = SOURCE_ROOT;
@@ -387,6 +391,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		D4D93D161C4277AD0049B12C /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				D4D93D171C4278060049B12C /* CoreGraphicsCategory.h */,
+				D4D93D181C4278060049B12C /* CoreGraphicsCategory.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
 		D4D93D231C427B220049B12C /* NSFileManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +516,7 @@
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D4D93D1F1C4279B80049B12C /* NSString+Hash.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
+				D4D93D191C4278060049B12C /* CoreGraphicsCategory.m in Sources */,
 				D4D93D2A1C4283E00049B12C /* NSNotificationCenter+Notification.m in Sources */,
 				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
 				D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */,
