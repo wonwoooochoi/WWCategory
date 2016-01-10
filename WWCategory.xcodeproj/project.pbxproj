@@ -15,6 +15,8 @@
 		D41345A11C42461700D67C0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D413459F1C42461700D67C0E /* LaunchScreen.storyboard */; };
 		D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C01C424E3200D67C0E /* NSArray+JSON.m */; };
 		D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */; };
+		D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CC1C42503600D67C0E /* NSData+Base64.m */; };
+		D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D41345CF1C42506300D67C0E /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		D41345C01C424E3200D67C0E /* NSArray+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
 		D41345C61C424EFD00D67C0E /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		D41345CB1C42503600D67C0E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		D41345CC1C42503600D67C0E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		D41345CE1C42506300D67C0E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		D41345CF1C42506300D67C0E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				D41345AE1C424E0700D67C0E /* NSArray */,
+				D41345C91C42500100D67C0E /* NSData */,
 				D41345C51C424EFD00D67C0E /* NSDictionary */,
+				D41345CA1C42500100D67C0E /* NSString */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -119,6 +127,24 @@
 				D41345C71C424EFD00D67C0E /* NSDictionary+JSON.m */,
 			);
 			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		D41345C91C42500100D67C0E /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D41345CB1C42503600D67C0E /* NSData+Base64.h */,
+				D41345CC1C42503600D67C0E /* NSData+Base64.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		D41345CA1C42500100D67C0E /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				D41345CE1C42506300D67C0E /* NSString+Base64.h */,
+				D41345CF1C42506300D67C0E /* NSString+Base64.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +222,8 @@
 				D41345961C42461700D67C0E /* AppDelegate.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
+				D41345CD1C42503600D67C0E /* NSData+Base64.m in Sources */,
+				D41345D01C42506300D67C0E /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
