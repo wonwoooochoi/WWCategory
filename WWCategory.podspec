@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/wonwoooochoi/WWCategory.git" }
   s.public_header_files = 'Category/WWCategory.h'
   s.source_files = 'Category/**/*.{h,m}'
-  s.frameworks  = 'UIKit', 'Foundation', 'CoreGraphics', 'CommonCrypto', 'AssetsLibrary'
+  s.frameworks  = 'UIKit', 'Foundation', 'CoreGraphics', 'Security', 'AssetsLibrary'
   s.requires_arc = true
   s.ios.deployment_target = '5.0'
 end
