@@ -25,6 +25,7 @@
 			
 			jsonString = [[NSString alloc] initWithData:jsonData
 														  encoding:NSUTF8StringEncoding];
+			jsonString = [jsonString stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"];
 			
 		}
 		
