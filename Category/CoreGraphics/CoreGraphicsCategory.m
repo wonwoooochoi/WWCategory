@@ -13,9 +13,8 @@
 // -----------------------------------------------------------------------------
 
 CGPoint CGRectGetCenter(CGRect frame) {
-	
-	return CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
-	
+	CGPoint center = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
+	return center;
 }
 
 
@@ -25,7 +24,6 @@ CGPoint CGRectGetCenter(CGRect frame) {
 // -----------------------------------------------------------------------------
 
 CGAffineTransform CGAffineTransformMakeRotationFromDegrees(CGFloat degrees) {
-	
-	return CGAffineTransformMakeRotation((M_PI * degrees / 180.0));
-	
+	CGAffineTransform transform = CGAffineTransformMakeRotation((M_PI * degrees / 180.0));
+	return transform;
 }

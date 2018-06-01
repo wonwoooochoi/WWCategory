@@ -10,10 +10,9 @@
 
 @implementation UIScreen (Size)
 
-+ (CGSize)appSize {
-	
-	return [self mainScreen].applicationFrame.size;
-	
++ (CGSize)screenSize {
+	CGSize screenSize = self.mainScreen.bounds.size;
+	return screenSize;
 }
 
 @end

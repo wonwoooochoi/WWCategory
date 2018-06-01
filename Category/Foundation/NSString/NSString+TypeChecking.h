@@ -14,13 +14,13 @@
  @brief 문자열이 이메일 타입인지 체크.
  @return 이메일 타입이면 YES.
  */
-- (BOOL)isEmailType;
+@property (nonatomic, readonly) BOOL isEmailType;
 
 
 /**
  @brief 문자열이 전화번호 타입인지 체크.
  @return 전화번호 타입이면 YES.
  */
-- (BOOL)isPhoneNumberType;
+@property (nonatomic, readonly) BOOL isPhoneNumberType;
 
 @end

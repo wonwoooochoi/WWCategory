@@ -13,26 +13,22 @@
 - (void)setRoundingCorners:(UIRectCorner)roundingCorners cornerRadius:(CGFloat)cornerRadius {
 	
 	UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
-																  byRoundingCorners:roundingCorners
-																		  cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+												   byRoundingCorners:roundingCorners
+														 cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
 	
 	CAShapeLayer *maskLayer = nil;
 	
 	if ([self.layer.mask isKindOfClass:[CAShapeLayer class]]) {
-		
 		maskLayer = (CAShapeLayer *)self.layer.mask;
-		
 	}
 	else {
-		
 		maskLayer = [CAShapeLayer layer];
-		
 	}
 	
-	[maskLayer setFrame:self.bounds];
-	[maskLayer setPath:maskPath.CGPath];
+	maskLayer.frame = self.bounds;
+	maskLayer.path = maskPath.CGPath;
 	
-	[self.layer setMask:maskLayer];
+	self.layer.mask = maskLayer;
 	
 }
 

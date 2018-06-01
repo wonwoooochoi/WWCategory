@@ -16,6 +16,6 @@
  @param fontSize 폰트 사이즈.
  @return 사이즈.
  */
-- (CGSize)boundingRectWithSize:(CGSize)size fontSize:(CGFloat)fontSize;
+- (CGSize)boundingSizeWithMaxSize:(CGSize)size fontSize:(CGFloat)fontSize;
 
 @end

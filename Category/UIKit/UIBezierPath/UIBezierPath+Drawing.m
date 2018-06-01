@@ -11,9 +11,7 @@
 @implementation UIBezierPath (Drawing)
 
 - (void)addArcWithCenter:(CGPoint)center radius:(CGFloat)radius startDegree:(CGFloat)startDegree endDegree:(CGFloat)endDegree clockwise:(BOOL)clockwise {
-	
 	[self addArcWithCenter:center radius:radius startAngle:((startDegree - 90) / 180 * M_PI) endAngle:((endDegree - 90) / 180 * M_PI) clockwise:clockwise];
-	
 }
 
 @end

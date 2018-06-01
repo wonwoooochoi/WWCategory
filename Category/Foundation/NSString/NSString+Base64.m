@@ -11,31 +11,27 @@
 @implementation NSString (Base64)
 
 - (NSData *)data {
-	
-	return [self dataUsingEncoding:NSUTF8StringEncoding];
-	
+	NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+	return data;
 }
 
 
 - (NSData *)base64EncodedData {
-	
-	return [[self data] base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
-	
+	NSData *base64EncodedData = [self.data base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
+	return base64EncodedData;
 }
 
 
 - (NSString *)base64EncodedString {
-	
-	return [[self data] base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-	
+	NSString *base64EncodedString = [self.data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+	return base64EncodedString;
 }
 
 
 - (NSString *)base64DecodedString {
-	
-	NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:self options:0];
-	return [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
-	
+	NSData *base64DecodedData = [[NSData alloc] initWithBase64EncodedString:self options:0];
+	NSString *base64DecodedString = [[NSString alloc] initWithData:base64EncodedData encoding:NSUTF8StringEncoding];
+	return base64DecodedString;
 }
 
 @end

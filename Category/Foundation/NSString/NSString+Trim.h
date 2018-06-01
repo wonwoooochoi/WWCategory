@@ -14,13 +14,13 @@
  @brief 문자열의 시작과 끝 부분에 있는 공백을 제거.
  @return 문자열.
  */
-- (NSString *)trim;
+@property (nonatomic, readonly) NSString *trimmedString;
 
 
 /**
  @brief 문자열의 시작과 끝 부분에 있는 공백과 개행문자를 제거.
  @return 문자열.
  */
-- (NSString *)trimWithNewLine;
+@property (nonatomic, readonly) NSString *lineTrimmedString;
 
 @end

@@ -10,24 +10,22 @@
 
 @implementation UIView (Capture)
 
-- (UIImage *)captureToImage {
-	
-	return [self captureToImageWithSize:self.frame.size];
-	
+- (UIImage *)capturedImage {
+	UIImage *capturedImage = [self capturedImageWithSize:self.frame.size];
+	return capturedImage;
 }
 
 
-- (UIImage *)captureToImageWithSize:(CGSize)size {
+- (UIImage *)capturedImageWithSize:(CGSize)size {
 	
-//	UIGraphicsBeginImageContext(self.frame.size);
-	UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+	UIGraphicsBeginImageContextWithOptions(size, NO, UIScreen.mainScreen.scale);
 	
 	[self.layer renderInContext:UIGraphicsGetCurrentContext()];
 	
-	UIImage *imageCapture = UIGraphicsGetImageFromCurrentImageContext();
+	UIImage *capturedImage = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 	
-	return imageCapture;
+	return capturedImage;
 	
 }
 

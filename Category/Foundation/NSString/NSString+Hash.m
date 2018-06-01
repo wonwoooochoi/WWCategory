@@ -11,43 +11,51 @@
 
 @implementation NSString (Hash)
 
-- (NSString *)sha1 {
+- (NSString *)SHA1String {
 	
 	const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
 	NSData *data = [NSData dataWithBytes:cstr length:self.length];
 	
 	uint8_t digest[CC_SHA1_DIGEST_LENGTH];
 	
-	CC_SHA1(data.bytes, data.length, digest);
+	CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
 	
-	NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+	NSMutableString *sha1 = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
 	
 	for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) {
-		
-		[output appendFormat:@"%02x", digest[i]];
-		
+		[sha1 appendFormat:@"%02x", digest[i]];
 	}
 	
+	NSString *sha1String = nil;
 	
-	return output;
+	if (sha1.length > 0) {
+		sha1String = [[NSString alloc] initWithString:sha1];
+	}
+	
+	return sha1String;
 	
 }
 
 
-- (NSString *)md5 {
+- (NSString *)MD5String {
 	
 	const char *cStr = [self UTF8String];
 	unsigned char digest[16];
-	CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+	CC_MD5( cStr, (CC_LONG)strlen(cStr), digest ); // This is the md5 call
 	
-	NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+	NSMutableString *md5 = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
 	
-	for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-		[output appendFormat:@"%02x", digest[i]];
+	for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+		[md5 appendFormat:@"%02x", digest[i]];
+	}
 	
+	NSString *md5String = nil;
 	
-	return  output;
+	if (md5.length > 0) {
+		md5String = [[NSString alloc] initWithString:md5];
+	}
 	
+	return md5String;
 }
 
 

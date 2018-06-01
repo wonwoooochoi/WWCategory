@@ -18,8 +18,8 @@
 	BOOL isMatched = NO;
 	
 	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression
-																								  options:NSRegularExpressionCaseInsensitive
-																									 error:&error];
+																		   options:NSRegularExpressionCaseInsensitive
+																			 error:&error];
 	
 	if (!error) {
 		
@@ -30,9 +30,7 @@
 		
 	}
 	else {
-		
 		NSLog(@"error: %@", error.localizedDescription);
-		
 	}
 	
 	return isMatched;
@@ -47,8 +45,8 @@
 	BOOL isMatched = NO;
 	
 	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression
-																								  options:NSRegularExpressionCaseInsensitive
-																									 error:&error];
+																		   options:NSRegularExpressionCaseInsensitive
+																			 error:&error];
 	
 	if (!error) {
 		
@@ -59,9 +57,7 @@
 		
 	}
 	else {
-		
 		NSLog(@"error: %@", error.localizedDescription);
-		
 	}
 	
 	return isMatched;

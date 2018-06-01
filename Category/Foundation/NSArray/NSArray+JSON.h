@@ -15,6 +15,6 @@
  @brief ex) [a, b, c].
  @return JSON 문자열.
  */
-- (NSString *)JSONString;
+@property (nonatomic, copy, readonly) NSString *JSONString;
 
 @end

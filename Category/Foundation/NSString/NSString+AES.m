@@ -11,48 +11,44 @@
 
 @implementation NSString (AES)
 
-- (NSString *)AES256EncryptWithKey:(NSString *)key {
+- (NSString *)AES256EncryptedStringWithKey:(NSString *)key {
 	
 	NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *encryptedData = [data AES256EncryptWithKey:key];
-	NSString *encryptedString = [[NSString alloc] initWithData:encryptedData
-																	  encoding:NSUTF8StringEncoding];
+	NSString *encryptedString = [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
 	
 	return encryptedString;
 	
 }
 
 
-- (NSString *)AES256DecryptWithKey:(NSString *)key {
+- (NSString *)AES256DecryptedStringWithKey:(NSString *)key {
 	
 	NSData *encryptedData = [self dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *data = [encryptedData AES256DecryptWithKey:key];
-	NSString *string = [[NSString alloc] initWithData:data
-														  encoding:NSUTF8StringEncoding];
+	NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	
 	return string;
 	
 }
 
 
-- (NSString *)AES128EncryptWithKey:(NSString *)key {
+- (NSString *)AES128EncryptedStringWithKey:(NSString *)key {
 	
 	NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *encryptedData = [data AES128EncryptWithKey:key];
-	NSString *encryptedString = [[NSString alloc] initWithData:encryptedData
-																	  encoding:NSUTF8StringEncoding];
+	NSString *encryptedString = [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
 	
 	return encryptedString;
 	
 }
 
 
-- (NSString *)AES128DecryptWithKey:(NSString *)key {
+- (NSString *)AES128DecryptedStringWithKey:(NSString *)key {
 	
 	NSData *encryptedData = [self dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *data = [encryptedData AES128DecryptWithKey:key];
-	NSString *string = [[NSString alloc] initWithData:data
-														  encoding:NSUTF8StringEncoding];
+	NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	
 	return string;
 	

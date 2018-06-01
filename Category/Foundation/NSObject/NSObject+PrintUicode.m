@@ -12,25 +12,20 @@
 
 - (NSString *)descriptionForObject:(NSObject *)object locale:(id)locale indent:(NSUInteger)indent {
 	
-	NSString *objectString;
+	NSString *objectString = nil;
 	
-	if ([object isKindOfClass:[NSString class]])
-		
+	if ([object isKindOfClass:NSString.class]) {
 		objectString = (NSString *)object;
-	
-	else if ([object respondsToSelector:@selector(descriptionWithLocale:indent:)])
-		
+	}
+	else if ([object respondsToSelector:@selector(descriptionWithLocale:indent:)]) {
 		objectString = [(NSDictionary *)object descriptionWithLocale:locale indent:indent];
-	
-	else if ([object respondsToSelector:@selector(descriptionWithLocale:)])
-		
+	}
+	else if ([object respondsToSelector:@selector(descriptionWithLocale:)]) {
 		objectString = [(NSSet *)object descriptionWithLocale:locale];
-	
-	else
-		
-		objectString = [object description];
-	
-	
+	}
+	else {
+		objectString = object.description;
+	}
 	
 	return objectString;
 	

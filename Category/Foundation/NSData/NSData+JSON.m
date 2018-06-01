@@ -12,12 +12,8 @@
 @implementation NSData (JSON)
 
 - (NSString *)JSONString {
-	
-	NSString *jsonString = [[NSString alloc] initWithData:self
-																encoding:NSUTF8StringEncoding];
-	
+	NSString *jsonString = [[NSString alloc] initWithData:self encoding:NSUTF8StringEncoding];
 	return jsonString;
-	
 }
 
 

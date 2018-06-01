@@ -15,27 +15,27 @@
  @brief Base64 인코딩된 Data일 경우 Base64 인코딩된 문자열로 변환됨.
  @return 문자열.
  */
-- (NSString *)string;
+@property (nonatomic, copy, readonly) NSString *string;
 
 
 /*!
  @brief Data를 Base64 인코딩된 문자열로 변환.
  @return 문자열.
  */
-- (NSString *)base64EncodedString;
+@property (nonatomic, copy, readonly) NSString *base64EncodedString;
 
 
 /*!
  @brief Data를 Base64 인코딩된 data 객체로 변환.
  @return data 객체.
  */
-- (NSData *)base64EncodedData;
+@property (nonatomic, copy, readonly) NSData *base64EncodedData;
 
 
 /*!
  @brief Base64 인코딩된 Data를 디코딩.
  @return data 객체. Base64 인코딩된 객체가 아닐 경우 nil.
  */
-- (NSData *)base64DecodedData;
+@property (nonatomic, copy, readonly) NSData *base64DecodedData;
 
 @end

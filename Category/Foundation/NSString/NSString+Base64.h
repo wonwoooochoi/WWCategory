@@ -14,27 +14,27 @@
  @brief 뮨자열을 data형식으로 변환.
  @return data 객체.
  */
-- (NSData *)data;
+@property (nonatomic, readonly) NSData *data;
 
 
 /*!
  @brief 뮨자열을 Base64 인코딩된 data형식으로 변환.
  @return data 객체.
  */
-- (NSData *)base64EncodedData;
+@property (nonatomic, readonly) NSData *base64EncodedData;
 
 
 /*!
  @brief 문자열을 Base64 인코딩.
  @return 문자열.
  */
-- (NSString *)base64EncodedString;
+@property (nonatomic, readonly) NSString *base64EncodedString;
 
 
 /*!
  @brief Base64 인코딩된 문자열을 디코딩.
  @return 문자열.
  */
-- (NSString *)base64DecodedString;
+@property (nonatomic, readonly) NSString *base64DecodedString;
 
 @end

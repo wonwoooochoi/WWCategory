@@ -24,6 +24,6 @@
  @param name 스토리보드 파일명.
  @return 뷰 컨트롤러.
  */
-+ (id)instantiateViewControllerWithIdentifier:(NSString *)identifier storyboardName:(NSString *)name;
++ (__kindof UIViewController *)instantiateViewControllerWithIdentifier:(NSString *)identifier storyboardName:(NSString *)name;
 
 @end

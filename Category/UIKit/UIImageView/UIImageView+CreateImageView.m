@@ -20,9 +20,7 @@
 	frame.size = image.size;
 	
 	if ((self = [super initWithFrame:frame])) {
-		
-		[self setImage:image];
-		
+		self.image = image;
 	}
 	
 	return self;
@@ -37,9 +35,7 @@
 	frame.size = image.size;
 	
 	if ((self = [super initWithFrame:frame])) {
-		
-		[self setImage:image];
-		
+		self.image = image;
 	}
 	
 	return self;
@@ -50,7 +46,6 @@
 - (instancetype)initWithPNGName:(NSString *)name {
 	
 	UIImage *image = [UIImage imageWithPNGName:name];
-	
 	return [self initWithImage:image];
 	
 }

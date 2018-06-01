@@ -8,40 +8,45 @@
 
 #import "NSNotificationCenter+Notification.h"
 
-@implementation NSNotificationCenter (Notification)
+NSString * const WWNotificationUserInfoKey	= @"WWNotificationUserInfoKey";
 
-+ (void)postNotificationName:(NSString *)aName userInfo:(NSDictionary *)userInfo {
+@implementation NSNotificationCenter (Register)
+
++ (void)addObserver:(id)observer selector:(SEL)selector name:(NSString *)name {
+	[self.defaultCenter addObserver:observer selector:selector name:name object:nil];
+}
+
+
++ (id)addObserverForName:(NSString *)name queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block {
+	return [self.defaultCenter addObserverForName:name object:nil queue:queue usingBlock:block];
+}
+
+
++ (id)addObserverForName:(NSString *)name usingBlock:(void (^)(NSNotification *note))block {
+	return [[self defaultCenter] addObserverForName:name object:nil queue:NSOperationQueue.mainQueue usingBlock:block];
+}
+
+
++ (void)postNotificationName:(NSString *)name userObject:(id)userObject {
 	
-	[[self defaultCenter] postNotificationName:aName object:nil userInfo:userInfo];
+	NSDictionary *userInfo = nil;
+	
+	if (userObject) {
+		userInfo = @{WWNotificationUserInfoKey:[userObject copy]};
+	}
+	
+	[self.defaultCenter postNotificationName:name object:nil userInfo:userInfo];
 	
 }
 
 
-+ (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName {
-	
-	[[self defaultCenter] addObserver:observer selector:aSelector name:aName object:nil];
-	
-}
-
-
-+ (id)addObserverForName:(NSString *)aName usingBlock:(void (^)(NSNotification *note))block {
-	
-	return [[self defaultCenter] addObserverForName:aName object:nil queue:[NSOperationQueue mainQueue] usingBlock:block];
-	
-}
-
-
-+ (void)removeObserver:(id)observer name:(NSString *)aName {
-	
-	if (observer) [[self defaultCenter] removeObserver:observer name:aName object:nil];
-	
++ (void)removeObserver:(id)observer name:(NSString *)name {
+	[self.defaultCenter removeObserver:observer name:name object:nil];
 }
 
 
 + (void)removeObserver:(id)observer {
-	
-	if (observer) [[self defaultCenter] removeObserver:observer];
-	
+	[self.defaultCenter removeObserver:observer];
 }
 
 @end

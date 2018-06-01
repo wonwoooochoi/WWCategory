@@ -15,7 +15,7 @@
  @brief 문자열은 JSON 문자열이어야 함.
  @return data 객체.
  */
-- (id)JSONData;
+@property (nonatomic, readonly) NSData *JSONData;
 
 
 /**

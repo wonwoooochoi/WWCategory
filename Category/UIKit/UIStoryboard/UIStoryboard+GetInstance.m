@@ -11,16 +11,15 @@
 @implementation UIStoryboard (GetInstance)
 
 + (UIStoryboard *)storyboardWithName:(NSString *)name {
-	
-	return [UIStoryboard storyboardWithName:name bundle:[NSBundle mainBundle]];
-	
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:NSBundle.mainBundle];
+	return storyboard;
 }
 
 
-+ (id)instantiateViewControllerWithIdentifier:(NSString *)identifier storyboardName:(NSString *)name {
-	
-	return [[self storyboardWithName:name] instantiateViewControllerWithIdentifier:identifier];
-	
++ (__kindof UIViewController *)instantiateViewControllerWithIdentifier:(NSString *)identifier storyboardName:(NSString *)name {
+	UIStoryboard *storyboard = [self storyboardWithName:name];
+	UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+	return viewController;
 }
 
 @end

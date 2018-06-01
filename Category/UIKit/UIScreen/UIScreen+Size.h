@@ -14,6 +14,6 @@
  @brief 앱이 실행되는 기기의 화면 사이즈를 반환.
  @return 화면 사이즈.
  */
-+ (CGSize)appSize;
+@property (class, nonatomic, assign, readonly) CGSize screenSize;
 
 @end

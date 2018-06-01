@@ -11,9 +11,7 @@
 @implementation NSString (Localizing)
 
 - (NSString *)localizedString {
-	
 	return NSLocalizedString(self, self);
-	
 }
 
 @end

@@ -11,10 +11,13 @@
 @implementation UITextField (Color)
 
 - (void)setCursorColor:(UIColor *)color {
-	
-	[[self valueForKey:@"textInputTraits"] setValue:[UIColor redColor]
-														  forKey:@"insertionPointColor"];
-	
+	[[self valueForKey:@"textInputTraits"] setValue:[color copy] forKey:@"insertionPointColor"];
+}
+
+
+- (UIColor *)cursorColor {
+	UIColor *cursorColor = [[self valueForKey:@"textInputTraits"] valueForKey:@"insertionPointColor"];
+	return [cursorColor copy];
 }
 
 @end

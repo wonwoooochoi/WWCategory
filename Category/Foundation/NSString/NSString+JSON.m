@@ -10,23 +10,15 @@
 
 @implementation NSString (JSON)
 
-- (id)JSONData {
-	
+- (NSData *)JSONData {
 	NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
-	
-	return jsonData;
-	
+	return jsonData;	
 }
 
 
 - (id)JSONObjectWithError:(NSError **)error {
-	
-	id object = [NSJSONSerialization JSONObjectWithData:[self JSONData]
-															  options:NSJSONReadingMutableLeaves
-																 error:error];
-	
+	id object = [NSJSONSerialization JSONObjectWithData:self.JSONData options:NSJSONReadingMutableLeaves error:error];
 	return object;
-	
 }
 
 @end

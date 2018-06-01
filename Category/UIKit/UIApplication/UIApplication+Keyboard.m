@@ -11,9 +11,7 @@
 @implementation UIApplication (Keyboard)
 
 + (BOOL)endEditing:(BOOL)force {
-	
-	return [[UIApplication sharedApplication].keyWindow endEditing:force];
-	
+	return [UIApplication.sharedApplication.keyWindow endEditing:force];
 }
 
 @end

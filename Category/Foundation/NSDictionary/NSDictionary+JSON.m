@@ -18,28 +18,24 @@
 		
 		NSError *error = nil;
 		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-																			options:NSJSONWritingPrettyPrinted
-																			  error:&error];
+														   options:NSJSONWritingPrettyPrinted
+															 error:&error];
 		
 		if (jsonData) {
-			
-			jsonString = [[NSString alloc] initWithData:jsonData
-														  encoding:NSUTF8StringEncoding];
+			jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 			jsonString = [jsonString stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"];
-			
 		}
 		
-		if (error) NSLog(@"ERROR: %@", error.localizedDescription);
+		if (error) {
+			NSLog(@"ERROR: %@", error.localizedDescription);
+		}
 		
 	}
 	else {
-		
 		NSLog(@"ERROR: This array can't convert to JSON string");
-		
 	}
 	
-	
-	return jsonString;
+	return [jsonString copy];
 	
 }
 

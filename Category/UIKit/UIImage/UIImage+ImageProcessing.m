@@ -10,7 +10,7 @@
 
 @implementation UIImage (ImageProcessing)
 
-- (UIImage *)grayScaleImage {
+- (UIImage *)grayScaledImage {
 	
 	// Create image rectangle with current image width/height
 	CGRect imageRect = CGRectMake(0, 0, self.size.width, self.size.height);
@@ -45,19 +45,14 @@
 - (UIImage *)resizedFillImageWithSize:(CGSize)newSize {
 	
 	CGSize reSize = newSize;
-	
-	float widthRatio = newSize.width / self.size.width;
-	float heightRatio = newSize.height / self.size.height;
+	CGFloat widthRatio = newSize.width / self.size.width;
+	CGFloat heightRatio = newSize.height / self.size.height;
 	
 	if (self.size.width > self.size.height) {
-		
 		reSize = CGSizeMake(newSize.width, self.size.height * widthRatio);
-		
 	}
 	else if (self.size.width < self.size.height) {
-		
 		reSize = CGSizeMake(self.size.width * heightRatio, newSize.height);
-		
 	}
 	
 	UIGraphicsBeginImageContext(newSize);
@@ -82,19 +77,14 @@
 - (UIImage *)resizedFitImageWithSize:(CGSize)newSize {
 	
 	CGSize reSize = newSize;
-	
-	float widthRatio = newSize.width / self.size.width;
-	float heightRatio = newSize.height / self.size.height;
+	CGFloat widthRatio = newSize.width / self.size.width;
+	CGFloat heightRatio = newSize.height / self.size.height;
 	
 	if (self.size.width > self.size.height) {
-		
 		reSize = CGSizeMake(newSize.width, self.size.height * widthRatio);
-		
 	}
 	else if (self.size.width < self.size.height) {
-		
 		reSize = CGSizeMake(self.size.width * heightRatio, newSize.height);
-		
 	}
 	
 	UIGraphicsBeginImageContext(reSize);
@@ -132,17 +122,13 @@
 	
 	CGContextScaleCTM(ctx, 1, -1);
 	CGContextTranslateCTM(ctx, 0, -area.size.height);
-	
 	CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
-	
 	CGContextSetAlpha(ctx, alpha);
-	
 	CGContextDrawImage(ctx, area, self.CGImage);
 	
 	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
 	
 	UIGraphicsEndImageContext();
-	
 	
 	return newImage;
 	
@@ -153,21 +139,19 @@
 	
 	CGImageRef imageRef = self.CGImage;
 	CGImageRef maskRef = maskImage.CGImage;
-	
 	CGImageRef mask = CGImageMaskCreate(CGImageGetWidth(maskRef),
-													CGImageGetHeight(maskRef),
-													CGImageGetBitsPerComponent(maskRef),
-													CGImageGetBitsPerPixel(maskRef),
-													CGImageGetBytesPerRow(maskRef),
-													CGImageGetDataProvider(maskRef),
-													NULL, false);
+										CGImageGetHeight(maskRef),
+										CGImageGetBitsPerComponent(maskRef),
+										CGImageGetBitsPerPixel(maskRef),
+										CGImageGetBytesPerRow(maskRef),
+										CGImageGetDataProvider(maskRef),
+										NULL, false);
 	
 	CGImageRef masked = CGImageCreateWithMask(imageRef, mask);
 	CGImageRelease(mask);
 	
 	UIImage *maskedImage = [UIImage imageWithCGImage:masked];
 	CGImageRelease(masked);
-	
 	
 	return maskedImage;
 	

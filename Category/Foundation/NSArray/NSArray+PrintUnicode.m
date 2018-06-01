@@ -16,9 +16,7 @@
 	NSMutableString *log = [NSMutableString string];
 	
 	if (self.count == 0) {
-		
 		[log appendString:@"There is no object."];
-		
 	}
 	else {
 		
@@ -28,9 +26,7 @@
 		NSMutableString *indentString = [NSMutableString string];
 		
 		for (int i = 0; i < level; i++) {
-			
 			[indentString appendString:@"\t"];
-			
 		}
 		
 		// value format
@@ -39,8 +35,11 @@
 			[log appendFormat:@"\t%@%@", indentString, [self descriptionForObject:self[i] locale:locale indent:level + 1]];
 			
 			// check next value
-			if (i + 1 < self.count) [log appendString:@",\n"];
-			else [log appendString:@"\n"];
+			if (i + 1 < self.count) {
+				[log appendString:@","];
+			}
+			
+			[log appendString:@"\n"];
 			
 		}
 		
@@ -48,7 +47,13 @@
 		
 	}
 	
-	return log;
+	NSString *description = nil;
+	
+	if (log.length > 0) {
+		description = [NSString stringWithString:log];
+	}
+	
+	return description;
 	
 }
 

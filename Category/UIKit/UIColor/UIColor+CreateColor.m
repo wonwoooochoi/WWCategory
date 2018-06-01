@@ -11,16 +11,12 @@
 @implementation UIColor (CreateColor)
 
 + (UIColor *)colorWithR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b {
-	
 	return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f];
-	
 }
 
 
 + (UIColor *)colorWithR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a {
-	
 	return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/100.0f];
-	
 }
 
 

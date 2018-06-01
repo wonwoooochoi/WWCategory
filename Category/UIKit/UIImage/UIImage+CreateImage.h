@@ -11,33 +11,29 @@
 
 @interface UIImage (CreateImage)
 
-+ (void)imageWithAssetURL:(NSURL *)url complete:(void(^)(UIImage *image))complete;
+/**
+ @brief 지정한 경로에 있는 이미지 파일의 이미지 객체 생성.
+ @return 이미지 객체.
+ */
 + (UIImage *)imageWithURL:(NSURL *)url;
 
 /**
- @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
- @return 컬러 객체.
- */
-+ (UIImage *)imageWithAsset:(ALAsset *)asset;
-
-
-/**
- @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
- @return 컬러 객체.
+ @brief PNG파일의 파일명으로 이미지 객체 생성.
+ @return 이미지 객체.
  */
 + (UIImage *)imageWithPNGName:(NSString *)imageName;
 
 
 /**
- @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
- @return 컬러 객체.
+ @brief PNG파일의 파일명으로 늘어날 이미지 객체 생성.
+ @return 이미지 객체.
  */
 + (UIImage *)imageWithPNGName:(NSString *)imageName capInsets:(UIEdgeInsets)inset;
 
 
 /**
- @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
- @return 컬러 객체.
+ @brief 지정한 컬러와 사이즈의 이미지 객체 생성.
+ @return 이미지 객체.
  */
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 

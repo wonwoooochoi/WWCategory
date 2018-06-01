@@ -11,20 +11,14 @@
 @implementation NSString (URLEncoding)
 
 - (NSString *)URLEncodedString {
-	
-	return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-																										  (CFStringRef)self,
-																										  NULL,
-																										  CFSTR(":/?#[]@!$ &’()*+,;=\"<>%{}|\\^~`\n\r"),
-																										  kCFStringEncodingUTF8));
-	
+	NSString *URLEncodedString = [self stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLHostAllowedCharacterSet];
+	return URLEncodedString;
 }
 
 
-- (NSString *)URLDecodedString {
-	
-	return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	
+- (NSString*)URLDecodedString {
+	NSString *URLDecodedString = self.stringByRemovingPercentEncoding;
+	return URLDecodedString;
 }
 
 @end

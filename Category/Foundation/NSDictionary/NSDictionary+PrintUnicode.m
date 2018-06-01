@@ -16,9 +16,7 @@
 	NSMutableString *log = [NSMutableString string];
 	
 	if (self.allKeys.count == 0) {
-		
 		[log appendString:@"0 key/value pairs"];
-		
 	}
 	else {
 		
@@ -28,9 +26,7 @@
 		NSMutableString *indentString = [NSMutableString string];
 		
 		for (int i = 0; i < level; i++) {
-			
 			[indentString appendString:@"\t"];
-			
 		}
 		
 		// key = value format
@@ -44,8 +40,11 @@
 			 [self descriptionForObject:self[key] locale:locale indent:level + 1]];
 			
 			// check next key
-			if (i + 1 < self.count) [log appendString:@",\n"];
-			else [log appendString:@"\n"];
+			if (i + 1 < self.count) {
+				[log appendString:@","];
+			}
+			
+			[log appendString:@"\n"];
 			
 		}
 		
@@ -53,7 +52,13 @@
 		
 	}
 	
-	return log;
+	NSString *description = nil;
+	
+	if (log.length > 0) {
+		description = [NSString stringWithString:log];
+	}
+	
+	return description;
 	
 }
 

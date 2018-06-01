@@ -20,8 +20,7 @@
 	
 	CCHmac(kCCHmacAlgSHA256, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
 	
-	NSData *HMAC = [[NSData alloc] initWithBytes:cHMAC
-													  length:sizeof(cHMAC)];
+	NSData *HMAC = [[NSData alloc] initWithBytes:cHMAC length:sizeof(cHMAC)];
 	
 	NSString *hash = HMAC.description;
 	hash = [hash stringByReplacingOccurrencesOfString:@" " withString:@""];

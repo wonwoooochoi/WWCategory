@@ -10,17 +10,13 @@
 
 @implementation NSString (Trim)
 
-- (NSString *)trim {
-	
-	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-	
+- (NSString *)trimmedString {
+	return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
 }
 
 
-- (NSString *)trimWithNewLine {
-	
-	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	
+- (NSString *)lineTrimmedString {
+	return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
 }
 
 @end

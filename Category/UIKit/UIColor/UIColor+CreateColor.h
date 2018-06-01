@@ -35,6 +35,6 @@
  @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
  @return 컬러 객체.
  */
-+ (UIColor *)randomColor;
+@property (class, nonatomic, copy , readonly) UIColor *randomColor;
 
 @end

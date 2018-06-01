@@ -15,7 +15,7 @@
  @brief data는 JSON 문자열로 변환 가능한 형식이어야 함.
  @return 문자열.
  */
-- (NSString *)JSONString;
+@property (nonatomic, copy, readonly) NSString *JSONString;
 
 
 /**
