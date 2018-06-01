@@ -30,7 +30,7 @@
 
 - (NSString *)base64DecodedString {
 	NSData *base64DecodedData = [[NSData alloc] initWithBase64EncodedString:self options:0];
-	NSString *base64DecodedString = [[NSString alloc] initWithData:base64EncodedData encoding:NSUTF8StringEncoding];
+	NSString *base64DecodedString = [[NSString alloc] initWithData:base64DecodedData encoding:NSUTF8StringEncoding];
 	return base64DecodedString;
 }
 
