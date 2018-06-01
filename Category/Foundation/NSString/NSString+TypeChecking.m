@@ -26,7 +26,7 @@
 		NSTextCheckingResult *match = [regex firstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
 		
 //		isMatched = (match.range.location != NSNotFound);
-		isMatched = (match);
+		isMatched = (BOOL)(match);
 		
 	}
 	else {
@@ -53,7 +53,7 @@
 		NSTextCheckingResult *match = [regex firstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
 		
 //		isMatched = (match.range.location != NSNotFound);
-		isMatched = (match);
+		isMatched = (BOOL)(match);
 		
 	}
 	else {
