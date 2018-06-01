@@ -11,7 +11,7 @@
 @interface UIStoryboard (GetInstance)
 
 /**
- @brief 메인 번들에 있는 스토리보드의 인스턴스를 가져옴.
+ 메인 번들에 있는 스토리보드의 인스턴스를 가져옴.
  @param name 스토리보드 파일명.
  @return 뷰 컨트롤러.
  */
@@ -19,7 +19,7 @@
 
 
 /**
- @brief 메인 번들에 있는 스토리보드 파일(Main.storyboard)에서 뷰 컨트롤러 인스턴스를 가져옴.
+ 메인 번들에 있는 스토리보드 파일(Main.storyboard)에서 뷰 컨트롤러 인스턴스를 가져옴.
  @param identifier 뷰 컨트롤러 식별자.
  @param name 스토리보드 파일명.
  @return 뷰 컨트롤러.

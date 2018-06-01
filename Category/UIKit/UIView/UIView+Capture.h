@@ -11,13 +11,13 @@
 @interface UIView (Capture)
 
 /**
- @brief 현재 뷰의 화면을 이미지로 캡쳐 함.
+ 현재 뷰의 화면을 이미지로 캡쳐 함.
  @return 이미지 객체.
  */
 @property (nonatomic, copy, readonly) UIImage *capturedImage;
 
 /**
- @brief 현재 뷰의 화면을 이미지로 캡쳐 함.
+ 현재 뷰의 화면을 이미지로 캡쳐 함.
  @param size 캡처할 이미지의 사이즈.
  @return 이미지 객체.
  */

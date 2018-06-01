@@ -11,7 +11,7 @@
 @interface NSString (Size)
 
 /**
- @brief 문자열의 바운딩 사이즈를 계산.
+ 문자열의 바운딩 사이즈를 계산.
  @param size 최대 바운딩 사이즈.
  @param fontSize 폰트 사이즈.
  @return 사이즈.

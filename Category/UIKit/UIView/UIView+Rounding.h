@@ -11,7 +11,7 @@
 @interface UIView (Rounding)
 
 /**
- @brief 뷰의 가장자리 코너 4군데중 선택한 코너를 라운딩 처리.
+ 뷰의 가장자리 코너 4군데중 선택한 코너를 라운딩 처리.
  @param roundingCorners 라운딩할 코너들.
  @param cornerRadius 라운딩 값.
  */

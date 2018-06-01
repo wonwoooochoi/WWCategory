@@ -11,7 +11,7 @@
 @interface UIColor (CreateColor)
 
 /**
- @brief 1~255의 3원색 색상값으로 컬러 객체 생성.
+ 1~255의 3원색 색상값으로 컬러 객체 생성.
  @param r red, 1~255 사이의 정수.
  @param g green, 1~255 사이의 정수.
  @param b blue, 1~255 사이의 정수.
@@ -21,7 +21,7 @@
 
 
 /**
- @brief 1~255의 3원색 색상값과 알파값 퍼센티지로 컬러 객체 생성.
+ 1~255의 3원색 색상값과 알파값 퍼센티지로 컬러 객체 생성.
  @param r red, 1~255 사이의 정수.
  @param g green, 1~255 사이의 정수.
  @param b blue, 1~255 사이의 정수.
@@ -32,7 +32,7 @@
 
 
 /**
- @brief 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
+ 랜덤한 3원색의 색상으로 랜덤한 컬러 객체 생성.
  @return 컬러 객체.
  */
 @property (class, nonatomic, copy , readonly) UIColor *randomColor;

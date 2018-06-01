@@ -11,13 +11,13 @@
 @interface NSString (Hash)
 
 /*!
- @brief 뮨자열을 SHA1 해시로 변환.
+ 뮨자열을 SHA1 해시로 변환.
  @return 문자열 객체.
  */
 @property (nonatomic, copy, readonly) NSString *SHA1String;
 
 /*!
- @brief 뮨자열을 MD5 해시로 변환.
+ 뮨자열을 MD5 해시로 변환.
  @return 문자열 객체.
  */
 @property (nonatomic, copy, readonly) NSString *MD5String;

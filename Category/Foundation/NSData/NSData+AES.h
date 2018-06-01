@@ -11,7 +11,7 @@
 @interface NSData (AES)
 
 /**
- @brief data 형식을 지정한 키로 AES256으로 암호화.
+ data 형식을 지정한 키로 AES256으로 암호화.
  @param key 암호화 키.
  @return 암호화된 데이터.
  */
@@ -19,7 +19,7 @@
 
 
 /**
- @brief AES256으로 암호화된 data 형식을 지정한 키로 복호화.
+ AES256으로 암호화된 data 형식을 지정한 키로 복호화.
  @param key 복호화 키.
  @return 복호화된 데이터.
  */
@@ -27,7 +27,7 @@
 
 
 /**
- @brief data 형식을 지정한 키로 AES128로 암호화.
+ data 형식을 지정한 키로 AES128로 암호화.
  @param key 암호화 키.
  @return 암호화된 데이터.
  */
@@ -35,7 +35,7 @@
 
 
 /**
- @brief AES128로 암호화된 data 형식을 지정한 키로 복호화.
+ AES128로 암호화된 data 형식을 지정한 키로 복호화.
  @param key 복호화 키.
  @return 복호화된 데이터.
  */

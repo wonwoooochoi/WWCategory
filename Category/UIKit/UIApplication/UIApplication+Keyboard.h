@@ -11,7 +11,7 @@
 @interface UIApplication (Keyboard)
 
 /**
- @brief 키보드 show / hide.
+ 키보드 show / hide.
  @param force 보일지 여부.
  */
 + (BOOL)endEditing:(BOOL)force;

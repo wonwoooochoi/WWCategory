@@ -11,7 +11,7 @@
 @interface NSString (HMAC)
 
 /**
- @brief HMAC SHA256 해시 문자열을 생성.
+ HMAC SHA256 해시 문자열을 생성.
  @param key 문자열 키.
  @return 문자열.
  */

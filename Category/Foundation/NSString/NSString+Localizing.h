@@ -11,7 +11,7 @@
 @interface NSString (Localizing)
 
 /**
- @brief 지역화된 문자열 반환.
+ 지역화된 문자열 반환.
  @return 문자열 객체.
  */
 @property (nonatomic, readonly) NSString *localizedString;

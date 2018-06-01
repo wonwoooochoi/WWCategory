@@ -11,14 +11,14 @@
 @interface NSString (URLEncoding)
 
 /**
- @brief 문자열을 URL encoding.
+ 문자열을 URL encoding.
  @return 문자열 객체.
  */
 
 @property (nonatomic, readonly) NSString *URLEncodedString;
 
 /**
- @brief 문자열을 URL decoding.
+ 문자열을 URL decoding.
  @return 문자열 객체.
  */
 @property (nonatomic, readonly) NSString *URLDecodedString;

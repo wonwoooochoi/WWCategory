@@ -11,7 +11,7 @@
 @interface UIBezierPath (Drawing)
 
 /**
- @brief 호를 그림.
+ 호를 그림.
  @param center 중심정 좌표.
  @param radius 반지름.
  @param startDegree 시작 각.
