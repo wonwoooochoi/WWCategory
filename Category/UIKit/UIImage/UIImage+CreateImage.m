@@ -27,7 +27,7 @@
 	
 	if (scale > 1) {
 		
-		NSString *suffix = [NSString stringWithFormat:@"@%lix", scale];
+		NSString *suffix = [NSString stringWithFormat:@"@%ldx", scale];
 		
 		if (![fixedImageName hasSuffix:suffix]) {
 			fixedImageName = [fixedImageName stringByAppendingString:suffix];
