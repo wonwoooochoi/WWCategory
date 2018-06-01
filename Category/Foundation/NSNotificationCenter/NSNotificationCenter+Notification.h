@@ -30,7 +30,6 @@
 /*!
  알림 통지 받을 옵저버 등록. 블럭을 메인 스레드에서 실행.
  @param name 알림명.
- @param queue 블럭이 실행될 큐.
  @param block 실행할 함수 블럭.
  @return 옵저버 객체.
  */
