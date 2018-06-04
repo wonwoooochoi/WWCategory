@@ -11,6 +11,14 @@
 @interface UIColor (CreateColor)
 
 /**
+ Hex code로 컬러 객체 생성.
+ @param hexCode 000000 ~ FFFFFF. 코드앞에 #, 0x도 사용 가능. 소문자 가능.
+ @return 컬러 객체.
+ */
++ (UIColor *)colorWithHexCode:(NSString *)hexCode;
+
+
+/**
  1~255의 3원색 색상값으로 컬러 객체 생성.
  @param r red, 1~255 사이의 정수.
  @param g green, 1~255 사이의 정수.

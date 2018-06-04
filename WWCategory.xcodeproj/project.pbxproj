@@ -39,6 +39,12 @@
 		D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346151C4268EC00D67C0E /* UIStoryboard+GetInstance.m */; };
 		D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D41346191C4269DC00D67C0E /* UITextField+Color.m */; };
 		D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */ = {isa = PBXBuildFile; fileRef = D413461D1C426A2200D67C0E /* UIView+Rounding.m */; };
+		D4C3102520C4D3D200358A17 /* UIBarButtonItem+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3102420C4D3D200358A17 /* UIBarButtonItem+Block.m */; };
+		D4C3102920C4DD0100358A17 /* UICollectionView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3102720C4DD0100358A17 /* UICollectionView+Register.m */; };
+		D4C3102D20C4DD0B00358A17 /* UITableView+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3102B20C4DD0B00358A17 /* UITableView+Register.m */; };
+		D4C3103120C4E15C00358A17 /* UIButton+Align.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3103020C4E15C00358A17 /* UIButton+Align.m */; };
+		D4C3103420C4E29200358A17 /* UIApplication+TopmostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3103320C4E29200358A17 /* UIApplication+TopmostViewController.m */; };
+		D4C3103820C4E57300358A17 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3103720C4E57300358A17 /* UIViewController+Present.m */; };
 		D4D93D151C4276B60049B12C /* UIView+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D141C4276B60049B12C /* UIView+Capture.m */; };
 		D4D93D191C4278060049B12C /* CoreGraphicsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D181C4278060049B12C /* CoreGraphicsCategory.m */; };
 		D4D93D1C1C4279440049B12C /* NSString+Localizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D93D1B1C4279440049B12C /* NSString+Localizing.m */; };
@@ -112,6 +118,18 @@
 		D41346191C4269DC00D67C0E /* UITextField+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Color.m"; sourceTree = "<group>"; };
 		D413461C1C426A2200D67C0E /* UIView+Rounding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rounding.h"; sourceTree = "<group>"; };
 		D413461D1C426A2200D67C0E /* UIView+Rounding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rounding.m"; sourceTree = "<group>"; };
+		D4C3102320C4D3D200358A17 /* UIBarButtonItem+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Block.h"; sourceTree = "<group>"; };
+		D4C3102420C4D3D200358A17 /* UIBarButtonItem+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Block.m"; sourceTree = "<group>"; };
+		D4C3102720C4DD0100358A17 /* UICollectionView+Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Register.m"; sourceTree = "<group>"; };
+		D4C3102820C4DD0100358A17 /* UICollectionView+Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Register.h"; sourceTree = "<group>"; };
+		D4C3102B20C4DD0B00358A17 /* UITableView+Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Register.m"; sourceTree = "<group>"; };
+		D4C3102C20C4DD0B00358A17 /* UITableView+Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Register.h"; sourceTree = "<group>"; };
+		D4C3102F20C4E15C00358A17 /* UIButton+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Align.h"; sourceTree = "<group>"; };
+		D4C3103020C4E15C00358A17 /* UIButton+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Align.m"; sourceTree = "<group>"; };
+		D4C3103220C4E29200358A17 /* UIApplication+TopmostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopmostViewController.h"; sourceTree = "<group>"; };
+		D4C3103320C4E29200358A17 /* UIApplication+TopmostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopmostViewController.m"; sourceTree = "<group>"; };
+		D4C3103620C4E57300358A17 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		D4C3103720C4E57300358A17 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
 		D4D93D101C4274470049B12C /* WWCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCategory.h; sourceTree = "<group>"; };
 		D4D93D111C4274750049B12C /* UIKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitCategory.h; sourceTree = "<group>"; };
 		D4D93D121C4274880049B12C /* FoundationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationCategory.h; sourceTree = "<group>"; };
@@ -297,14 +315,19 @@
 			children = (
 				D4D93D111C4274750049B12C /* UIKitCategory.h */,
 				D41345F81C425FE000D67C0E /* UIApplication */,
+				D4C3102220C4D3D200358A17 /* UIBarButtonItem */,
 				D41345FC1C42605F00D67C0E /* UIBezierPath */,
+				D4C3102E20C4E15C00358A17 /* UIButton */,
+				D4C3102620C4DD0100358A17 /* UICollectionView */,
 				D41346001C4260D600D67C0E /* UIColor */,
 				D41346041C42618A00D67C0E /* UIImage */,
 				D413460B1C42628400D67C0E /* UIImageView */,
 				D413460F1C4262E400D67C0E /* UIScreen */,
 				D41346131C4268A100D67C0E /* UIStoryboard */,
+				D4C3102A20C4DD0B00358A17 /* UITableView */,
 				D41346171C4269C500D67C0E /* UITextField */,
 				D413461B1C426A0500D67C0E /* UIView */,
+				D4C3103520C4E57300358A17 /* UIViewController */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -314,6 +337,8 @@
 			children = (
 				D41345F91C42602A00D67C0E /* UIApplication+Keyboard.h */,
 				D41345FA1C42602A00D67C0E /* UIApplication+Keyboard.m */,
+				D4C3103220C4E29200358A17 /* UIApplication+TopmostViewController.h */,
+				D4C3103320C4E29200358A17 /* UIApplication+TopmostViewController.m */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -392,6 +417,51 @@
 				D413461D1C426A2200D67C0E /* UIView+Rounding.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		D4C3102220C4D3D200358A17 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3102320C4D3D200358A17 /* UIBarButtonItem+Block.h */,
+				D4C3102420C4D3D200358A17 /* UIBarButtonItem+Block.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		D4C3102620C4DD0100358A17 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3102820C4DD0100358A17 /* UICollectionView+Register.h */,
+				D4C3102720C4DD0100358A17 /* UICollectionView+Register.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		D4C3102A20C4DD0B00358A17 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3102C20C4DD0B00358A17 /* UITableView+Register.h */,
+				D4C3102B20C4DD0B00358A17 /* UITableView+Register.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		D4C3102E20C4E15C00358A17 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3102F20C4E15C00358A17 /* UIButton+Align.h */,
+				D4C3103020C4E15C00358A17 /* UIButton+Align.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		D4C3103520C4E57300358A17 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3103620C4E57300358A17 /* UIViewController+Present.h */,
+				D4C3103720C4E57300358A17 /* UIViewController+Present.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		D4D93D161C4277AD0049B12C /* CoreGraphics */ = {
@@ -494,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41345E71C42565300D67C0E /* NSData+AES.m in Sources */,
+				D4C3102520C4D3D200358A17 /* UIBarButtonItem+Block.m in Sources */,
 				D41346161C4268EC00D67C0E /* UIStoryboard+GetInstance.m in Sources */,
 				D41345EA1C4259C200D67C0E /* NSString+HMAC.m in Sources */,
 				D4D93D151C4276B60049B12C /* UIView+Capture.m in Sources */,
@@ -507,11 +578,15 @@
 				D41345C81C424EFD00D67C0E /* NSDictionary+JSON.m in Sources */,
 				D4D93D261C427B3D0049B12C /* NSFileManager+Directory.m in Sources */,
 				D41345E11C42556A00D67C0E /* NSData+JSON.m in Sources */,
+				D4C3102D20C4DD0B00358A17 /* UITableView+Register.m in Sources */,
 				D41345DE1C42544700D67C0E /* NSSet+PrintUnicode.m in Sources */,
 				D41345F61C425C3500D67C0E /* NSString+Size.m in Sources */,
 				D41346031C42610300D67C0E /* UIColor+CreateColor.m in Sources */,
+				D4C3103120C4E15C00358A17 /* UIButton+Align.m in Sources */,
+				D4C3103820C4E57300358A17 /* UIViewController+Present.m in Sources */,
 				D413461A1C4269DC00D67C0E /* UITextField+Color.m in Sources */,
 				D41345FF1C4260A300D67C0E /* UIBezierPath+Drawing.m in Sources */,
+				D4C3103420C4E29200358A17 /* UIApplication+TopmostViewController.m in Sources */,
 				D41345DA1C42540000D67C0E /* NSDictionary+PrintUnicode.m in Sources */,
 				D413461E1C426A2200D67C0E /* UIView+Rounding.m in Sources */,
 				D41346121C4262FD00D67C0E /* UIScreen+Size.m in Sources */,
@@ -519,6 +594,7 @@
 				D41345FB1C42602A00D67C0E /* UIApplication+Keyboard.m in Sources */,
 				D413460E1C42629E00D67C0E /* UIImageView+CreateImageView.m in Sources */,
 				D41345C11C424E3200D67C0E /* NSArray+JSON.m in Sources */,
+				D4C3102920C4DD0100358A17 /* UICollectionView+Register.m in Sources */,
 				D4D93D1F1C4279B80049B12C /* NSString+Hash.m in Sources */,
 				D41345931C42461700D67C0E /* main.m in Sources */,
 				D4D93D191C4278060049B12C /* CoreGraphicsCategory.m in Sources */,

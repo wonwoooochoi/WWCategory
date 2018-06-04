@@ -11,6 +11,11 @@
 @implementation NSString (Size)
 
 - (CGSize)boundingSizeWithMaxSize:(CGSize)size fontSize:(CGFloat)fontSize {
+	return [self boundingSizeWithMaxSize:size font:[UIFont systemFontOfSize:fontSize]];
+}
+
+
+- (CGSize)boundingSizeWithMaxSize:(CGSize)size font:(UIFont *)font {
 	
 	NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin;
 //	NSStringDrawingOptions options = NSLineBreakByWordWrapping|NSStringDrawingUsesLineFragmentOrigin;
@@ -19,7 +24,7 @@
 	paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
 	
 	NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-	attributes[NSFontAttributeName] = [UIFont systemFontOfSize:fontSize];
+	attributes[NSFontAttributeName] = font;
 	attributes[NSParagraphStyleAttributeName] = paragraphStyle;
 	
 	CGRect rect = [self boundingRectWithSize:size options:options attributes:attributes context:nil];
