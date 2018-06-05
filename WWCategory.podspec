@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 	
 	s.name         = 'WWCategory'
-	s.version      = '0.8.5'
+	s.version      = '0.8.6'
 	s.summary      = 'The iOS development simple and useful category.'
 	s.homepage     = 'https://github.com/wonwoooochoi/WWCategory.git'
 	s.license      = 'MIT'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 		ss.subspec 'NSData' do |sss|
 			
 			sss.source_files = 'Category/Foundation/NSData/*.{h,m}', 'Category/Foundation/NSString/NSString+JSON.{h,m}'
-			sss.ios.frameworks  = 'Security'
+			sss.ios.frameworks = 'Security'
 			
 		end
 		
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
 		ss.subspec 'NSString' do |sss|
 			
 			sss.source_files = 'Category/Foundation/NSString/*.{h,m}', 'Category/Foundation/NSData/NSData+AES.{h,m}'
-			sss.ios.frameworks  = 'Security'
+			sss.ios.frameworks = 'Security'
 			
 		end
 		
@@ -80,9 +80,27 @@ Pod::Spec.new do |s|
 			
 		end
 		
+		ss.subspec 'UIBarButtonItem' do |sss|
+			
+			sss.source_files = 'Category/UIKit/UIBarButtonItem/*.{h,m}'
+			
+		end
+		
 		ss.subspec 'UIBezierPath' do |sss|
 			
 			sss.source_files = 'Category/UIKit/UIBezierPath/*.{h,m}'
+			
+		end
+		
+		ss.subspec 'UIButton' do |sss|
+			
+			sss.source_files = 'Category/UIKit/UIButton/*.{h,m}'
+			
+		end
+		
+		ss.subspec 'UICollectionView' do |sss|
+			
+			sss.source_files = 'Category/UIKit/UICollectionView/*.{h,m}'
 			
 		end
 		
@@ -117,6 +135,12 @@ Pod::Spec.new do |s|
 			
 		end
 		
+		ss.subspec 'UITableView' do |sss|
+			
+			sss.source_files = 'Category/UIKit/UITableView/*.{h,m}'
+			
+		end
+		
 		ss.subspec 'UITextField' do |sss|
 			
 			sss.source_files = 'Category/UIKit/UITextField/*.{h,m}'
@@ -126,6 +150,12 @@ Pod::Spec.new do |s|
 		ss.subspec 'UIView' do |sss|
 			
 			sss.source_files = 'Category/UIKit/UIView/*.{h,m}'
+			
+		end
+		
+		ss.subspec 'UIViewController' do |sss|
+			
+			sss.source_files = 'Category/UIKit/UIViewController/*.{h,m}'
 			
 		end
 		
